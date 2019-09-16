@@ -191,7 +191,8 @@ if __name__ == "__main__":
         fname_tex = fname + ".tex"
 
         write_preamble(fname_tex)
-        photo = None if ekf == "NA" else is_in_foto_dir(ekf)
+        # photo = None if ekf == "NA" else is_in_foto_dir(ekf)
+        photo = player[6].rstrip()
         write_player(player, fname_tex, photo)
         write_country(player, fname_tex, country) #[player[0]])
         write_role(player, fname_tex)

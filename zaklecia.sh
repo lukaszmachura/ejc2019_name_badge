@@ -1,4 +1,6 @@
 #!/bin/bash -x
+
+mkdir zawieszki
 python ejc18_zawieszki.py
 pdfnup --nup 2x2 --no-landscape --paper a4paper --noautoscale true --outfile a4.pdf zawieszki/*pdf
 
